@@ -1,0 +1,20 @@
+<h1> GitHub Info For User:  {{ user_info.login }}</h1>
+
+<P> User's Info {{ user_info.name }}</P>
+
+<p> Public Repositry Count: {{ user_info.repos}}  </p>
+
+<p><a href="{{ user_info.home_page}}">View user's repositories at GitHub  </a></p>
+
+
+<p>
+<img src="{{ user_info.avatar_url }}"> 
+</p>
+
+
+<p> Do you want to try again?<a href="/">Go back to home page </a></p>
+
+<p><a href="https://github.com">Visit GitHub's website</a></p>
+
+
+{% endblock %}
